@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const StyledDetailPanel = styled.div 
 `   display: flex;
     flex-direction: column;
-    background-color: ${pr => pr.theme.auburn};
     color: ${pr => pr.theme.cream};
     width: 50%;
     margin: 0 auto 10%;
@@ -12,7 +11,6 @@ const StyledDetailPanel = styled.div
 
 const Details = ({ character, close }) => {
     return (
-        console.log(character),
         <StyledDetailPanel className='styledDetailPanel'>
             <h2 className='detail'>{character.name}'s Details</h2>
             <p>Birth year: {character.birth_year}</p>

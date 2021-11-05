@@ -6,9 +6,6 @@ const StyledCharacterPanel = styled.div
 `   background-color: ${pr => pr.theme.orange};
     color: ${pr => pr.theme.cream};
     width: 15%;
-    padding-bottom: 1%;
-    border-radius: 5%;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 `
 
 function Character({ character, open, characterId }) {

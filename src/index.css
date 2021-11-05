@@ -38,7 +38,7 @@ html{
     background-size: cover;
     background-position: center;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; /* This unfortunately causes a scrolling issue with the inspect console open, I'm so sorry! */
 }
 body{
     font-size:1.6rem;
