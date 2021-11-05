@@ -21,6 +21,7 @@ const StyledCharacterListings = styled.div
 ` display: flex;
   justify-content: space-evenly;
   margin: 5% auto;
+  align-items: center;
 `
 
 const App = () => {
@@ -51,7 +52,8 @@ const App = () => {
         <StyledLogo src={logo} alt=""/> 
         <h1>CHARACTERS</h1>
       </StyledHeader>
-      <StyledCharacterListings>
+      <p className='tagline'>Click a "DETAILS" button to view information about that StarWars© character.</p> 
+      <StyledCharacterListings className='characterListings'>
         {characterList.map(character => <Character character={character} key={character.url} open={openDetails} characterId={characterList.indexOf(character)} />)}
       </StyledCharacterListings>
       {currentCharacter && <Details character={currentCharacter} close={closeDetails} />}

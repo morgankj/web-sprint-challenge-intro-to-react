@@ -1,9 +1,58 @@
 .App {
   text-align: center;
 }
+
 h1 {
-  font-size: 4vw;
+  font-size: 4.2vw; /* only did vw so that it would maintain size with the logo */
   font-weight: bold;
   line-height: 1;
 }
-/* write your parent styles in here for your App.js */
+
+h2 {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 5%;
+  font-weight: bold;
+}
+
+button {
+  background-color: #fdf0d5;
+  border: none;
+  padding: 3%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: #ffd5c2;
+}
+
+.styledDetailPanel button {
+  width: 20%;
+  margin: 3% 5% 3% 75%;
+}
+
+.styledDetailPanel h2 {
+  margin: none;
+}
+
+.detail {
+  margin: 3%;
+  font-size: 3rem;
+}
+
+.styledCharacterPanel, .styledDetailPanel {
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.styledDetailPanel p {
+  
+}
+
+.tagline {
+  margin: 2%;
+  color: #fdf0d5;
+  text-shadow: 4px 3px 8px rgba(0, 0, 0, 0.7);
+  font-size: 1.7rem;
+}

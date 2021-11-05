@@ -2,19 +2,22 @@
 import React from "react";
 import styled from 'styled-components';
 
-const StyledCharacterContainer = styled.div 
-`   background-color: ${pr => pr.theme.lightForestGreen};
+const StyledCharacterPanel = styled.div 
+`   background-color: ${pr => pr.theme.orange};
     color: ${pr => pr.theme.cream};
-    width: 10%;
+    width: 15%;
+    padding-bottom: 1%;
     border-radius: 5%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 `
 
 function Character({ character, open, characterId }) {
     return (
-        <StyledCharacterContainer>
+        <StyledCharacterPanel className='styledCharacterPanel'>
             <h2>{character.name}</h2>
-            <button onClick={() => open(characterId)}>See details</button>
-        </StyledCharacterContainer>
+            <button className='detailButton' onClick={() => 
+                open(characterId)}>DETAILS</button>
+        </StyledCharacterPanel>
     )
 }
 

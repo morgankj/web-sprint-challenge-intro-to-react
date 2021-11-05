@@ -33,13 +33,16 @@ footer, header, hgroup, menu, nav, section {
 /*General Styles*/
 html{
     font-size:62.5%;
+    background-image: url('./images/sw-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    overflow: hidden;
 }
 body{
     font-size:1.6rem;
     line-height:1.5;
-    color:#171a10;
-    font-family: sans-serif;
-    background-image: url('./images/sw-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    color:#0c0605;
+    font-family: 'Roboto', sans-serif;
 }

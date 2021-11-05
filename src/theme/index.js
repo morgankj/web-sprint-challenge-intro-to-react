@@ -1,9 +1,9 @@
 const mainColors = {
-    lightForestGreen: '#606c38',
-    forestGreen: '#283618',
-    cream: '#fefae0',
-    warmTan: '#dda15e',
-    caramel: '#bc6c25'
+    auburn: '#c8553d',
+    orange: '#f28f3b',
+    peach: '#ffd5c2',
+    greyBlue: '#588b8b',
+    cream: '#fdf0d5'
 }
 
 export default mainColors;
