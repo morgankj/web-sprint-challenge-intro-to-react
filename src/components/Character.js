@@ -1,9 +1,20 @@
 // Write your Character component here
 import React from "react";
+import styled from 'styled-components';
 
-function Character(props) {
+const StyledCharacterContainer = styled.div 
+`   background-color: ${pr => pr.theme.lightForestGreen};
+    color: ${pr => pr.theme.cream};
+    width: 10%;
+    border-radius: 5%;
+`
+
+function Character({ character, open, characterId }) {
     return (
-        <h2>{props.character.name}</h2>
+        <StyledCharacterContainer>
+            <h2>{character.name}</h2>
+            <button onClick={() => open(characterId)}>See details</button>
+        </StyledCharacterContainer>
     )
 }
 
